@@ -28,11 +28,24 @@
 		}
 
 		.jumbotron {
-			background-image: url("images/350X150.jpg");
-			-webkit-background-size: 100%;
-			-moz-background-size: 100%;
-			-o-background-size: 100%;
-			-background-size: 100%;
+			-background-position: top;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			-background-size: cover;
+		}
+
+		.jumbotron img {
+			float: center;
+			width: 100%;
+			height: auto;
+			max-width: 1000px;
+			top: 0px;
+			bottom: 0px;
+		}
+
+		.blurred-background {
+
 		}
 	</style>
 
@@ -64,10 +77,11 @@
 		</div>
 </nav>
 
-<div class="jumbotron text-center">
-	<img src="images/350X150.jpg" style="visibility: hidden; float: center; max-width: 350px; width: 100%; height: auto;" />
+<div class="jumbotron text-center" style="background-image: url('images/crow_island.jpg')";>
+	<div class="blurred-background">
 	<h1>April 2 Referendum</h1>
 	<h3> Bring us a better plan </h3>
+	</div>
 </div>
 
 <div class="container">
@@ -79,8 +93,7 @@
 	  </div>
 </div>
 
-<div class="jumbotron text-center">
-	<img src="images/350X150.jpg" style="visibility: hidden; float: center; max-width: 350px; width: 100%; height: auto;" />
+<div class="jumbotron text-center" style="background-image: url('images/hubbard_woods.jpg')";>
 	<h4>How to Vote</h4>
 </div>
 
@@ -103,8 +116,7 @@
 	  </div>
 </div>
 
-<div class="jumbotron text-center">
-	<img src="images/350X150.jpg" style="visibility: hidden; float: center; max-width: 350px; width: 100%; height: auto;" />
+<div class="jumbotron text-center" style="background-image: url('images/greeley.jpg')";>
 	<h4> Contact </h4>
 </div>
 

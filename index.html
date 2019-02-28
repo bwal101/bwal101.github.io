@@ -5,14 +5,8 @@
 	</title>
 
 	<style>
-		.navbar-header {
-		    float: left;
-		    padding: 15px;
-		    text-align: center;
-		    width: 100%;
-		}
 		.navbar-brand {
-			float:none;
+			margin-left: 46%;
 		}
 
 		.banner {
@@ -42,20 +36,36 @@
 		}
 	</style>
 
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-	<div class="navbar-header">
-		<a class="navbar-brand" href="#">Vote No</a>
+		<a class="navbar-brand" href="#" style="float: center">Vote No</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-	</div>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent" style="width: 100%;">
+			<ul class="navbar-nav mr-auto" style="width: 100%;">
+				<li class="nav-item dropdown" style="margin-left: 80%">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Menu
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">How to Vote</a>		
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Contact</a>
+					</div>
+				</li>
+			</ul>
+		</div>
 </nav>
 
 <div class="jumbotron text-center">
-	<img src="images/350X150.jpg" style="visibility: hidden; width: 100%; height: auto;" />
+	<img src="images/350X150.jpg" style="visibility: hidden; float: center; max-width: 350px; width: 100%; height: auto;" />
 	<h1>April 2 Referendum</h1>
 	<h3> Bring us a better plan </h3>
 </div>
@@ -70,16 +80,16 @@
 </div>
 
 <div class="jumbotron text-center">
-	<img src="images/350X150.jpg" style="visibility: hidden; width: 100%; height: auto;" />
+	<img src="images/350X150.jpg" style="visibility: hidden; float: center; max-width: 350px; width: 100%; height: auto;" />
+	<h4>How to Vote</h4>
 </div>
 
 <div class="container">
 	  <div class="row">
-		<h4> How to Vote </h4>
 		<div class="col-md">
-			<h5>Go to your Polling Center</h5>
+			<h5>Polling Centers</h5>
 			<p>Winnetka Residents can find their polling center <a href="https://www.cookcountyclerk.com/service/your-voter-information/voter/search#edit-polling">here</a></p>
-			<p>Ut enim ad..</p>
+			<p>Polling centers will be open <b>April 2<sup>nd</sup></b></p>
 		</div>
 		<div class="col-md">
 			<h5>Early Voting</h5> 
@@ -94,8 +104,8 @@
 </div>
 
 <div class="jumbotron text-center">
-	<img src="images/350X150.jpg" style="visibility: hidden; width: 100%; height: auto;" />
-	<h1> Contact </h1>
+	<img src="images/350X150.jpg" style="visibility: hidden; float: center; max-width: 350px; width: 100%; height: auto;" />
+	<h4> Contact </h4>
 </div>
 
 <div class="container">

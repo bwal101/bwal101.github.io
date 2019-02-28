@@ -37,6 +37,9 @@ _testmain.go
 *.html~
 .gitignore~
 
+# registry information
+images/registry*
+
 # mac hidden files
 .DS_Store
 

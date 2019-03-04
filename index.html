@@ -6,6 +6,103 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/png" href="images/logo_favicon.png"/>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	
+	<script type="text/javascript">
+		$(function() {
+			var c1, c2, c3, c4, c5, c6, c7, c8;
+			c1 = c2 = c3 = c4 = c5 = c6 = c7 = c8 = 0;
+
+			$( "#b1" ).click(function() {
+				$( "#p1" ).toggle();
+				var arrow = document.getElementById('ar1');
+
+				if (c1 % 2 == 0) {
+					arrow.style.transform = 'rotate(180deg)';
+				} else {
+					arrow.style.transform = 'rotate(0deg)';
+				}
+				c1 += 1;
+			});
+			$( "#b2" ).click(function() {
+				$( "#p2" ).toggle();
+				var arrow = document.getElementById('ar2');
+
+				if (c2 % 2 == 0) {
+					arrow.style.transform = 'rotate(180deg)';
+				} else {
+					arrow.style.transform = 'rotate(0deg)';
+				}
+				c2 += 1;
+			});
+			$( "#b3" ).click(function() {
+				$( "#p3" ).toggle();
+				var arrow = document.getElementById('ar3');
+
+				if (c3 % 2 == 0) {
+					arrow.style.transform = 'rotate(180deg)';
+				} else {
+					arrow.style.transform = 'rotate(0deg)';
+				}
+				c3 += 1;
+			});
+			$( "#b4" ).click(function() {
+				$( "#p4" ).toggle();
+				var arrow = document.getElementById('ar4');
+
+				if (c4 % 2 == 0) {
+					arrow.style.transform = 'rotate(180deg)';
+				} else {
+					arrow.style.transform = 'rotate(0deg)';
+				}
+				c4 += 1;
+			});
+			$( "#b5" ).click(function() {
+				$( "#p5" ).toggle();
+				var arrow = document.getElementById('ar5');
+
+				if (c5 % 2 == 0) {
+					arrow.style.transform = 'rotate(180deg)';
+				} else {
+					arrow.style.transform = 'rotate(0deg)';
+				}
+				c5 += 1;
+			});
+			$( "#b6" ).click(function() {
+				$( "#p6" ).toggle();
+				var arrow = document.getElementById('ar6');
+
+				if (c6 % 2 == 0) {
+					arrow.style.transform = 'rotate(180deg)';
+				} else {
+					arrow.style.transform = 'rotate(0deg)';
+				}
+				c6 += 1;
+			});
+			$( "#b7" ).click(function() {
+				$( "#p7" ).toggle();
+				var arrow = document.getElementById('ar7');
+
+				if (c7 % 2 == 0) {
+					arrow.style.transform = 'rotate(180deg)';
+				} else {
+					arrow.style.transform = 'rotate(0deg)';
+				}
+				c7 += 1;
+			});
+			$( "#b8" ).click(function() {
+				$( "#p8" ).toggle();
+				var arrow = document.getElementById('ar8');
+
+				if (c8 % 2 == 0) {
+					arrow.style.transform = 'rotate(180deg)';
+				} else {
+					arrow.style.transform = 'rotate(0deg)';
+				}
+				c8 += 1;
+			});
+		});
+	</script>
 
 	<style>
 		@font-face {
@@ -47,9 +144,13 @@
 		}
 
 		.expandable-subject {
-			margin-left: 8%;
-			width: 84%;
+			cursor: pointer;
+			padding-top: 10px;
+			width: 100%;
 			text-align: center;
+		}
+		.expandable-subject:hover {
+			background-color: lightgray;
 		}
 
 		.expandable-subject-center {
@@ -65,9 +166,19 @@
 		}
 
 		.expandable-subject-right img {
+			margin-right: 5px;
 			height: 0.8em;
 			width: auto;
 		}
+
+		#p1 { display: none; }
+		#p2 { display: none; }
+		#p3 { display: none; }
+		#p4 { display: none; }
+		#p5 { display: none; }
+		#p6 { display: none; }
+		#p7 { display: none; }
+		#p8 { display: none; }
 
 		.row h5 {
 			font-family: gotham;
@@ -224,90 +335,123 @@
 	  </div>
 
 	  <div class="row">
-		  <div class="expandable-subject">
+		  <div class="expandable-subject" id="b1" value="Rotate">
 			  <div class="expandable-subject-center">
 				  <h5> Property Tax Increase </h5>
 			  </div>
 			  <div class="expandable-subject-right">
-				  <img type="img/png" src="images/arrow.png">
+				  <img id="ar1" type="img/png" src="images/arrow.png">
 			  </div>
+		  </div>
+		  <div id="p1">
+			  <p>If passed, this referendum is estimated to cost Winnetka property owners an additional $1,352 per $1 million fair market property value for 20 years. The total first phase of the project is $100.6 million, comprised of $90.6 million bond plus $10 million from reserves. 
+</p>
 		  </div>
 	  </div>
 
 	  <div class="row">
-		  <div class="expandable-subject">
+		  <div class="expandable-subject" id="b2">
 			  <div class="expandable-subject-center">
 				  <h5> Lack of Transparency </h5>
 			  </div>
 			  <div class="expandable-subject-right">
-				  <img type="img/png" src="images/arrow.png">
+				  <img id="ar2" type="img/png" src="images/arrow.png">
 			  </div>
+		  </div>
+		  <div id="p2">
+			  <p>The District is misleading taxpayers by reporting the annual net impact to the tax bill as $276 per $1 million fair market property value for 20 years. The total cost is actually $1,352 per $1 million fair market property value for 20 years. The average taxpayer was due to receive a $1,000 annual tax reduction on future tax bills but will not see that reduction if the referendum is passed.
+</p>
 		  </div>
 	  </div>
 
 	  <div class="row">
-		  <div class="expandable-subject">
+		  <div class="expandable-subject" id="b3">
 			  <div class="expandable-subject-center">
 				  <h5> Imbalance Crisis </h5>
 			  </div>
 			  <div class="expandable-subject-right">
-				  <img type="img/png" src="images/arrow.png">
+				  <img id="ar3" type="img/png" src="images/arrow.png">
 			  </div>
+		  </div>
+		  <div id="p3">
+			  <p>How can there be facility overcrowding with declining enrollment? Mismanagement. This situation can be solved with zero-cost solutions.
+</p>
 		  </div>
 	  </div>
 	  
 	  <div class="row">
-		  <div class="expandable-subject">
+		  <div class="expandable-subject" id="b4">
 			  <div class="expandable-subject-center">
 				  <h5> Shrinking District </h5>
 			  </div>
 			  <div class="expandable-subject-right">
-				  <img type="img/png" src="images/arrow.png">
+				  <img id="ar4" type="img/png" src="images/arrow.png">
 			  </div>
+		  </div>
+		  <div id="p4">
+			  <p>Enrollment has declined nearly 20% since 2006; the District is projecting future decline through 2026.
+</p>
 		  </div>
 	  </div>
 
 	  <div class="row">
-		  <div class="expandable-subject">
+		  <div class="expandable-subject" id="b5">
 			  <div class="expandable-subject-center">
 				  <h5> No Fiscal Discipline </h5>
 			  </div>
 			  <div class="expandable-subject-right">
-				  <img type="img/png" src="images/arrow.png">
+				  <img id="ar5" type="img/png" src="images/arrow.png">
 			  </div>
+		  </div>
+		  <div id="p5">
+			  <p>At $23,000 per pupil, current District operating costs are 54% higher than in Wilmette and 18% higher than in Glencoe. The Village’s annual budget notes that Winnetka D36 takes up the largest (and fastest growing) percentage of property taxes paid by residents
+</p>
 		  </div>
 	  </div>
 
 	  <div class="row">
-		  <div class="expandable-subject">
+		  <div class="expandable-subject" id="b6">
 			  <div class="expandable-subject-center">
 				  <h5> Wants - Not Needs </h5>
 			  </div>
 			  <div class="expandable-subject-right">
-				  <img type="img/png" src="images/arrow.png">
+				  <img id="ar6" type="img/png" src="images/arrow.png">
 			  </div>
+		  </div>
+		  <div id="p6">
+			  <p>Nearly $60 million of the FutureReady project is slated for non-essential “additions and renovations” at a time when enrollment is declining and Winnetka District 36 facilities are operating below capacity. This unnecessary facilities spending will crowd out spending for future educational needs and services.
+ 
+The District lists <a href="http://futurereadyd36.com/priorities/">three priorities</a> driving the plan. As a way to assess the importance of these priorities, consider how each area meets the standard of being a “need” versus a “want.”
+</p>
 		  </div>
 	  </div>
 
 	  <div class="row">
-		  <div class="expandable-subject">
+		  <div class="expandable-subject" id="b7">
 			  <div class="expandable-subject-center">
 				  <h5> We've been here Before </h5>
 			  </div>
 			  <div class="expandable-subject-right">
-				  <img type="img/png" src="images/arrow.png">
+				  <img id="ar7" type="img/png" src="images/arrow.png">
 			  </div>
+		  </div>
+		  <div id="p7">
+			  <p>Recently, taxpayers rejected New Trier High School’s high cost facilities referendum but approved a more reasonable second plan.
+</p>
 		  </div>
 	  </div>
 
 	  <div class="row">
-		  <div class="expandable-subject">
+		  <div class="expandable-subject" id="b8">
 			  <div class="expandable-subject-center">
 				  <h5> Big Picture Perspective </h5>
 			  </div>
 			  <div class="expandable-subject-right">
-				  <img type="img/png" src="images/arrow.png">
+				  <img id="ar8" type="img/png" src="images/arrow.png">
 			  </div>
+		  </div>
+		  <div id="p8">
+			  <p>$60 million on non-essential projects is not as urgent as other demands facing Winnetka taxpayers.</p>
 		  </div>
 	  </div>
 </div>

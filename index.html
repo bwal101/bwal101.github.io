@@ -5,6 +5,7 @@
 	</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/png" href="images/logo_favicon.png"/>
 
 	<style>
 		@font-face {
@@ -21,7 +22,7 @@
 		p b {
 			color: darkblue;
 		}
-
+		
 		.navbar-fixed-top {
 			position: fixed;
 			right: 0;
@@ -30,12 +31,42 @@
 			top: 0;
 		}
 
+		.navbar-header {
+			float: left;
+			padding: 15px;
+			text-align: center;
+			width: 100%;
+		}
+
 		.navbar-brand {
-			margin-left: 46%;
+			float: none;
 		}
 
 		.banner {
 			width: 100%;
+		}
+
+		.expandable-subject {
+			margin-left: 8%;
+			width: 84%;
+			text-align: center;
+		}
+
+		.expandable-subject-center {
+			float: center;
+			text-align: center;
+			display: inline-block;
+		}
+
+		.expandable-subject-right {
+			float: right;
+			text-align: center;
+			display: inline-block;
+		}
+
+		.expandable-subject-right img {
+			height: 0.8em;
+			width: auto;
 		}
 
 		.row h5 {
@@ -66,6 +97,14 @@
 			margin-bottom: 1em;
 		}
 
+		.col-md p {
+			padding-top: 15px;
+			padding-left: 10px;
+			padding-right: 5px;
+			margin-right: 0px;
+			margin-left: 0px;
+		}
+
 		.jumbotron {
 			-background-position: top;
 			-webkit-background-size: cover;
@@ -77,7 +116,7 @@
 		.jumbotron h1,h3 {
 			font-family: gotham;
 			font-weight: bold;
-			color: crimson;
+			color: darkblue;
 			
 			padding-top: 15px;
 		}
@@ -108,27 +147,30 @@
 
 <div class="navbar-fixed-top">
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#" style="float: center; position:absolute;">Vote No</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="navbarSupportedContent" style="width: 100%;">
-			<ul class="navbar-nav mr-auto" style="width: 100%;">
-				<li class="nav-item dropdown" style="margin-left: 80%">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Menu
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="#">How to Vote</a>		
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Contact</a>
-					</div>
-				</li>
-			</ul>
+		
+		<div class="navbar-header">
+			<button class="navbar-toggler" style="float: left; text-align: left;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" height="25px" width="auto"></a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent" style="width: 100%; float: right; text-align: right;">
+				<ul class="navbar-nav mr-auto" style="width: 100%;">
+					<li class="nav-item" ><!--style="margin-left: 40%"-->
+						<a class="nav-link" href="#" id="navbarDropdown" role="button">
+							How to Vote
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" id="navbarDropdown" role="button">
+							More Info
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</nav>
 </div>
+
 
 <div class="jumbotron text-center" style="margin-top: 50px; background-image: url('images/crow_island.jpg')";>
 	<div class="blurred-background">
@@ -160,7 +202,7 @@
 		</div>
 		<div class="col-md">
 			<h5>Early Voting</h5> 
-			<p>You can vote as early as March 18<sup>th</sup>. Nearest early-voting polling place is <a href="https://www.google.com/maps/place/2300+Old+Glenview+Rd,+Wilmette,+IL+60091/@42.0697905,-87.7357497,17z/data=!3m1!4b1!4m5!3m4!1s0x880fc576e5db6c77:0x1f9376635cdb6ea6!8m2!3d42.0697905!4d-87.733561">Centennial Arena</a> in Wilmette</p>	
+			<p>You can vote as early as <b>March 18<sup>th</sup></b>. Nearest early-voting polling place is <a href="https://www.google.com/maps/place/2300+Old+Glenview+Rd,+Wilmette,+IL+60091/@42.0697905,-87.7357497,17z/data=!3m1!4b1!4m5!3m4!1s0x880fc576e5db6c77:0x1f9376635cdb6ea6!8m2!3d42.0697905!4d-87.733561">Centennial Arena</a> in Wilmette</p>	
 		</div>
 		<div class="col-md">
 			<h5>Mail-in Vote</h5>
@@ -170,14 +212,102 @@
 </div>
 
 <div class="jumbotron text-center" style="background-image: url('images/greeley.jpg')";>
-	<div class="blurred-background" style= "width: 40%; margin-left: 30%; padding: 1em;">
-		<h3> Contact </h3>
+	<div class="blurred-background" style= "width: 60%; margin-left: 20%; padding: 1em;">
+		<h3> Why do we need a better Plan? </h3>
 	</div>
 </div>
 
 <div class="container">
 	  <div class="row">
-		  <h5> Mailing List </h5>
-		  <p>Fill out the form below to subscribe to <b>VOTE NO</b> reminders</p>
+		  <h5> Additional Info </h5>
+		  <p>The League of women voters in Winnetka has conducted extensive research regarding the upcoming <b>April 2<sup>nd</sup></b> referendum. Please click any of the following fields to explore topics regarding the referendum further.</p>
+	  </div>
+
+	  <div class="row">
+		  <div class="expandable-subject">
+			  <div class="expandable-subject-center">
+				  <h5> Property Tax Increase </h5>
+			  </div>
+			  <div class="expandable-subject-right">
+				  <img type="img/png" src="images/arrow.png">
+			  </div>
+		  </div>
+	  </div>
+
+	  <div class="row">
+		  <div class="expandable-subject">
+			  <div class="expandable-subject-center">
+				  <h5> Lack of Transparency </h5>
+			  </div>
+			  <div class="expandable-subject-right">
+				  <img type="img/png" src="images/arrow.png">
+			  </div>
+		  </div>
+	  </div>
+
+	  <div class="row">
+		  <div class="expandable-subject">
+			  <div class="expandable-subject-center">
+				  <h5> Imbalance Crisis </h5>
+			  </div>
+			  <div class="expandable-subject-right">
+				  <img type="img/png" src="images/arrow.png">
+			  </div>
+		  </div>
+	  </div>
+	  
+	  <div class="row">
+		  <div class="expandable-subject">
+			  <div class="expandable-subject-center">
+				  <h5> Shrinking District </h5>
+			  </div>
+			  <div class="expandable-subject-right">
+				  <img type="img/png" src="images/arrow.png">
+			  </div>
+		  </div>
+	  </div>
+
+	  <div class="row">
+		  <div class="expandable-subject">
+			  <div class="expandable-subject-center">
+				  <h5> No Fiscal Discipline </h5>
+			  </div>
+			  <div class="expandable-subject-right">
+				  <img type="img/png" src="images/arrow.png">
+			  </div>
+		  </div>
+	  </div>
+
+	  <div class="row">
+		  <div class="expandable-subject">
+			  <div class="expandable-subject-center">
+				  <h5> Wants - Not Needs </h5>
+			  </div>
+			  <div class="expandable-subject-right">
+				  <img type="img/png" src="images/arrow.png">
+			  </div>
+		  </div>
+	  </div>
+
+	  <div class="row">
+		  <div class="expandable-subject">
+			  <div class="expandable-subject-center">
+				  <h5> We've been here Before </h5>
+			  </div>
+			  <div class="expandable-subject-right">
+				  <img type="img/png" src="images/arrow.png">
+			  </div>
+		  </div>
+	  </div>
+
+	  <div class="row">
+		  <div class="expandable-subject">
+			  <div class="expandable-subject-center">
+				  <h5> Big Picture Perspective </h5>
+			  </div>
+			  <div class="expandable-subject-right">
+				  <img type="img/png" src="images/arrow.png">
+			  </div>
+		  </div>
 	  </div>
 </div>

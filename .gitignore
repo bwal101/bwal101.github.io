@@ -37,6 +37,9 @@ _testmain.go
 *.html~
 .gitignore~
 
+# photoshop files
+*.psd
+
 # registry information
 images/registry*
 

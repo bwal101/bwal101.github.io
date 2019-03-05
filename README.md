@@ -1,2 +1,2 @@
 # bwal101.github.io
-Website for vote no on the Winnetka Public Schools Referendum
+Website for the vote no campaign regarding the Winnetka Public Schools Referendum

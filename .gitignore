@@ -42,6 +42,10 @@ _testmain.go
 
 # registry information
 images/registry*
+# ignore folder
+images/ignore
+images/ignore/
+images/ignore/*
 
 # mac hidden files
 .DS_Store
